@@ -40,11 +40,6 @@ Using RSM and CCD techniques, we modeled and analyzed a chemical process to:
 /notebooks     -> Jupyter/Minitab analysis (if applicable)  
 README.md      -> This file  
 ```
-
-## ✅ How to Use
-
-1. Clone this repo:
-   ```bash
    git clone https://github.com/your-username/chem-design-ccd.git
    cd chem-design-ccd
    ```
