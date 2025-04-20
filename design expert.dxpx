@@ -1,0 +1,581 @@
+<!DOCTYPE DEXXMLDoc SYSTEM "DEXXMLDoc.DTD">
+<DEXXMLDoc name="design expert.dxpx" creator="DX12" version="12.0.3.0">
+<designInfo studyType="ResponseSurface" studySubType="Randomized" designType="CCD" noOfRuns="20" noOfFactors="3" noOfResponses="2">
+<designNotes>This data file is intended for use with the Response Surface (pt 2/3) tutorial.
+
+The case study in this tutorial involves production of a chemical. The two most important responses, are:
+
+y1 - Conversion (% of reactants converted to product)
+y2 - Activity.
+
+The experimenter chose three process factors to study.
+
+A - Time in minutes
+B - Temperature in degrees C
+C - Catalyst percentage
+</designNotes>
+</designInfo>
+<blockInfo>
+<block code="0" name="Machine 1"/>
+<block code="1" name="Machine 2"/>
+</blockInfo>
+<factorInfo>
+<factor id="A" name="time" unit="min." type="Numeric">
+<numeric format="General" low="40" high="50" stdDev="0"/>
+</factor>
+<factor id="B" name="temperature" unit="deg C" type="Numeric">
+<numeric format="General" low="80" high="90" stdDev="0"/>
+</factor>
+<factor id="C" name="catalyst" unit="%" type="Numeric">
+<numeric format="General" low="2" high="3" stdDev="0"/>
+</factor>
+</factorInfo>
+<constraintInfo/>
+<responseInfo>
+<response id="1" name="Conversion" unit="%" type="Normal" format="0.0" modelBase="Polynomial" stdDevSource="ANOVA" stdDev="4.1075814305057"/>
+<response id="2" name="Activity" unit="" type="Normal" format="0.0" modelBase="Polynomial" stdDevSource="ANOVA" stdDev="0.980642668119864"/>
+</responseInfo>
+<guiState>
+<designLayout>
+<visibleColumns>
+<column type="stdorder">
+<width>35</width>
+</column>
+<column type="block">
+<width>72</width>
+</column>
+<column type="runorder">
+<width>35</width>
+</column>
+<column type="pointtype">
+<width>63</width>
+</column>
+<column id="A" type="factor">
+<width>72</width>
+</column>
+<column id="B" type="factor">
+<width>72</width>
+</column>
+<column id="C" type="factor">
+<width>72</width>
+</column>
+<column id="1" type="response">
+<width>72</width>
+</column>
+<column id="2" type="response">
+<width>72</width>
+</column>
+</visibleColumns>
+</designLayout>
+<graphSettings>
+<graphArea name="Evaluation">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+<graphMethod>FDS</graphMethod>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="GraphColumns">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+<selectedGraph>0</selectedGraph>
+<colorBy type="spacePointType"/>
+<axisX type="factor" index="0"/>
+<axisY type="factor" index="2"/>
+<axisZ type="response" index="0"/>
+<histograms/>
+<legend key="Scatter2D" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="Scatter3D" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+</graphArea>
+<graphArea name="EffectsNoRestriction" graph="0">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+</graphArea>
+<graphArea name="EffectsNoRestriction" graph="1">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+</graphArea>
+<graphArea name="EffectsNoRestriction" graph="2">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+</graphArea>
+<graphArea name="Diagnostics" index="0">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+<legend key="NormalResidualsGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="ResVsPredGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="ResVsRunGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="PredVsActualGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="BoxCoxGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="ResVsFactorGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="CooksDistanceGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="LeverageGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="RunsVsDFFITSGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="RunsVsDFBETASGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<colorBy type="response" index="0"/>
+</graphArea>
+<graphArea name="Model" index="0" graph="0">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+<graphMethod>Contour</graphMethod>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="EffectsNoRestriction" graph="0">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+</graphArea>
+<graphArea name="EffectsNoRestriction" graph="1">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+</graphArea>
+<graphArea name="EffectsNoRestriction" graph="2">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+</graphArea>
+<graphArea name="Diagnostics" index="1">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+<colorBy type="none"/>
+</graphArea>
+<graphArea name="Model" index="1" graph="0">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+<graphMethod>Contour</graphMethod>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="GraphicalOptimization">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+<graphMethod>Contour</graphMethod>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="NumericalOptimization">
+<label type="title" index="16">Normal Plot of Residuals</label>
+<label type="title" index="17">Residuals vs. Predicted</label>
+<label type="title" index="19">Residuals vs. Run</label>
+<label type="normal" index="0">Normal % Probability</label>
+<label type="residuals" index="2">Externally Studentized Residuals</label>
+<label type="predicted" index="0">Predicted</label>
+<label type="actual" index="0">Actual</label>
+<graphMethod>Contour</graphMethod>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+</graphSettings>
+<perspectives>
+<report name="diagnostics_notebook_Conversion" width="1920" height="1080">35327d5067a0fc87002af82f00000002=*0|35327fe067a0fc88002af86800000003=+1,2,6|3532850067a0fc88002af86b00000004=+4,5|35328a2067a0fc88002af86e00000005=+3,7,8,9,10@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=35327d5067a0fc87002af82f00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=844;besth=440;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=35327fe067a0fc88002af86800000003;caption=;state=2098172;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=852;besth=440;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=3532850067a0fc88002af86b00000004;caption=;state=2098172;dir=3;layer=5;row=0;pos=0;prop=100000;bestw=848;besth=448;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=35328a2067a0fc88002af86e00000005;caption=;state=2098172;dir=3;layer=5;row=0;pos=1;prop=100000;bestw=848;besth=448;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,4,0)=854|dock_size(3,5,0)=450|</report>
+<report name="report_anova_Conversion" width="1920" height="1080">35328a2067a0fc78002abd3d00000002=*0|3532731067a0fc78002abd7500000003=+1,2|35327d5067a0fc78002abd7900000004=+3,4,5@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=35328a2067a0fc78002abd3d00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=844;besth=894;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=3532731067a0fc78002abd7500000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=852;besth=444;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=35327d5067a0fc78002abd7900000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=852;besth=444;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,3,0)=854|</report>
+<report name="report_fit_summary_Conversion" width="0" height="0"></report>
+</perspectives>
+</guiState>
+<designModel terms="10">
+<designTerm id="0" coef="1" term="Intercept"/>
+<designTerm id="1" coef="1" term="A"/>
+<designTerm id="2" coef="1" term="B"/>
+<designTerm id="3" coef="1" term="C"/>
+<designTerm id="4" coef="1" term="AB"/>
+<designTerm id="5" coef="1" term="AC"/>
+<designTerm id="6" coef="1" term="BC"/>
+<designTerm id="7" coef="1" term="A^2"/>
+<designTerm id="8" coef="1" term="B^2"/>
+<designTerm id="9" coef="1" term="C^2"/>
+</designModel>
+<run stdNo="1" dsnId="2" runNo="1" blockNo="0" blockName="Machine 1" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">40</facActual>
+<facActual id="B">80</facActual>
+<facActual id="C">2</facActual>
+<resVal id="1">74</resVal>
+<resVal id="2">53.2</resVal>
+</run>
+<run stdNo="7" dsnId="8" runNo="2" blockNo="0" blockName="Machine 1" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">40</facActual>
+<facActual id="B">90</facActual>
+<facActual id="C">3</facActual>
+<resVal id="1">66</resVal>
+<resVal id="2">59.8</resVal>
+</run>
+<run stdNo="10" dsnId="1" runNo="3" blockNo="0" blockName="Machine 1" pointId="7" pointName="Center" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">45</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">2.5</facActual>
+<resVal id="1">75</resVal>
+<resVal id="2">60.4</resVal>
+</run>
+<run stdNo="12" dsnId="1" runNo="4" blockNo="0" blockName="Machine 1" pointId="7" pointName="Center" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">45</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">2.5</facActual>
+<resVal id="1">83</resVal>
+<resVal id="2">60.6</resVal>
+</run>
+<run stdNo="4" dsnId="5" runNo="5" blockNo="0" blockName="Machine 1" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">50</facActual>
+<facActual id="B">90</facActual>
+<facActual id="C">2</facActual>
+<resVal id="1">70</resVal>
+<resVal id="2">62.6</resVal>
+</run>
+<run stdNo="11" dsnId="1" runNo="6" blockNo="0" blockName="Machine 1" pointId="7" pointName="Center" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">45</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">2.5</facActual>
+<resVal id="1">76</resVal>
+<resVal id="2">59.1</resVal>
+</run>
+<run stdNo="3" dsnId="4" runNo="7" blockNo="0" blockName="Machine 1" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">40</facActual>
+<facActual id="B">90</facActual>
+<facActual id="C">2</facActual>
+<resVal id="1">88</resVal>
+<resVal id="2">53.4</resVal>
+</run>
+<run stdNo="8" dsnId="9" runNo="8" blockNo="0" blockName="Machine 1" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">50</facActual>
+<facActual id="B">90</facActual>
+<facActual id="C">3</facActual>
+<resVal id="1">97</resVal>
+<resVal id="2">67.8</resVal>
+</run>
+<run stdNo="6" dsnId="7" runNo="9" blockNo="0" blockName="Machine 1" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">50</facActual>
+<facActual id="B">80</facActual>
+<facActual id="C">3</facActual>
+<resVal id="1">90</resVal>
+<resVal id="2">67.9</resVal>
+</run>
+<run stdNo="9" dsnId="1" runNo="10" blockNo="0" blockName="Machine 1" pointId="7" pointName="Center" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">45</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">2.5</facActual>
+<resVal id="1">81</resVal>
+<resVal id="2">59.2</resVal>
+</run>
+<run stdNo="5" dsnId="6" runNo="11" blockNo="0" blockName="Machine 1" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">40</facActual>
+<facActual id="B">80</facActual>
+<facActual id="C">3</facActual>
+<resVal id="1">71</resVal>
+<resVal id="2">57.3</resVal>
+</run>
+<run stdNo="2" dsnId="3" runNo="12" blockNo="0" blockName="Machine 1" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">50</facActual>
+<facActual id="B">80</facActual>
+<facActual id="C">2</facActual>
+<resVal id="1">51</resVal>
+<resVal id="2">62.9</resVal>
+</run>
+<run stdNo="14" dsnId="11" runNo="13" blockNo="1" blockName="Machine 2" pointId="10" pointName="Axial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">53.4089641525371</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">2.5</facActual>
+<resVal id="1">79</resVal>
+<resVal id="2">65.9</resVal>
+</run>
+<run stdNo="13" dsnId="10" runNo="14" blockNo="1" blockName="Machine 2" pointId="10" pointName="Axial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">36.5910358474629</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">2.5</facActual>
+<resVal id="1">76</resVal>
+<resVal id="2">53.6</resVal>
+</run>
+<run stdNo="20" dsnId="1" runNo="15" blockNo="1" blockName="Machine 2" pointId="7" pointName="Center" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">45</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">2.5</facActual>
+<resVal id="1">91</resVal>
+<resVal id="2">58.9</resVal>
+</run>
+<run stdNo="17" dsnId="14" runNo="16" blockNo="1" blockName="Machine 2" pointId="10" pointName="Axial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">45</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">1.65910358474629</facActual>
+<resVal id="1">55</resVal>
+<resVal id="2">57.4</resVal>
+</run>
+<run stdNo="18" dsnId="15" runNo="17" blockNo="1" blockName="Machine 2" pointId="10" pointName="Axial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">45</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">3.34089641525371</facActual>
+<resVal id="1">81</resVal>
+<resVal id="2">63.2</resVal>
+</run>
+<run stdNo="16" dsnId="13" runNo="18" blockNo="1" blockName="Machine 2" pointId="10" pointName="Axial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">45</facActual>
+<facActual id="B">93.4089641525372</facActual>
+<facActual id="C">2.5</facActual>
+<resVal id="1">97</resVal>
+<resVal id="2">60.7</resVal>
+</run>
+<run stdNo="19" dsnId="1" runNo="19" blockNo="1" blockName="Machine 2" pointId="7" pointName="Center" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">45</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">2.5</facActual>
+<resVal id="1">80</resVal>
+<resVal id="2">60.8</resVal>
+</run>
+<run stdNo="15" dsnId="12" runNo="20" blockNo="1" blockName="Machine 2" pointId="10" pointName="Axial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">45</facActual>
+<facActual id="B">76.5910358474628</facActual>
+<facActual id="C">2.5</facActual>
+<resVal id="1">85</resVal>
+<resVal id="2">60</resVal>
+</run>
+<responseModel id="1">
+<transform id="0" name="None"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="10">
+<equationTerm id="0" coef="81.6022070888444" term="Intercept"/>
+<equationTerm id="1" coef="1.0284490289588" term="A"/>
+<equationTerm id="2" coef="4.04057281113182" term="B"/>
+<equationTerm id="3" coef="6.2039626436185" term="C"/>
+<equationTerm id="4" coef="2.125" term="AB"/>
+<equationTerm id="5" coef="11.375" term="AC"/>
+<equationTerm id="6" coef="-3.87499999999999" term="BC"/>
+<equationTerm id="7" coef="-1.8959676109983" term="A^2"/>
+<equationTerm id="8" coef="2.87700316201087" term="B^2"/>
+<equationTerm id="9" coef="-5.25472482163444" term="C^2"/>
+<equationTerm id="10" term="Curvature"/>
+</compModel>
+</responseModel>
+<responseModel id="2">
+<transform id="0" name="None"/>
+<compModel modelType="Polynomial" calcType="CodedCalc" hierarchicalActual="false" terms="4">
+<equationTerm id="0" coef="60.20625" term="Intercept"/>
+<equationTerm id="1" coef="4.26057500155311" term="A"/>
+<equationTerm id="2" coef="0.254616101031058" term="B"/>
+<equationTerm id="3" coef="2.22997169484145" term="C"/>
+<equationTerm id="4" term="Curvature"/>
+</compModel>
+</responseModel>
+<optimization models="7">
+<criteria modType="Factor" id="1" goal="InRange" type="Numeric" target="45" limitLow="40" limitHigh="50" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="2" goal="InRange" type="Numeric" target="85" limitLow="80" limitHigh="90" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="3" goal="InRange" type="Numeric" target="2.5" limitLow="2" limitHigh="3" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Response" id="1" goal="None" type="Numeric" target="74" limitLow="51" limitHigh="97" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="POE" id="1" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+<criteria modType="Response" id="2" goal="None" type="Numeric" target="60.55" limitLow="53.2" limitHigh="67.9" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="POE" id="2" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original"/>
+</optimization>
+<confirmationData alpha="0.05"/>
+<buildInfo CCDType="Full" alphaType="Rotatable" alpha="121" noOfFactorialReps="1" noOfAxialReplicates="1" noOfCenterPoints="4" noOfCtrPerAxialBlk="2" buildTime="0"/>
+</DEXXMLDoc>
