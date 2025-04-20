@@ -1,5 +1,3 @@
-Absolutely! Here's your **final, clean, and complete `README.md`** as a **single code block**, with everything correctly included — including the **Visualization**, **Author**, and **Date** sections.
-
 ```markdown
 # Chemical Process Optimization with Central Composite Design (CCD)
 
