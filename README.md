@@ -61,5 +61,3 @@ Includes:
 
 ## 📅 Winter 1403 (2025)
 ```
-
-You're all set to drop this into your GitHub repo! Want a `LICENSE` file or a GitHub Actions badge next?
